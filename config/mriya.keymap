@@ -22,6 +22,15 @@
 };
 
 / {
+    macros {
+        raif_pass: raif_pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N) &kp B &kp V &kp E &kp H &kp R &kp A &kp I &kp F &kp N2 &kp N5 &kp AMPS>;
+            label = "RAIF_PASS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -56,7 +65,7 @@
             bindings = <
   &kp ESC         &trans        &trans        &kp UP        &trans      &kp PRINTSCREEN    &kp F1   &kp F2  &kp F3    &kp F4    &kp F5   &kp F6
   &kp LEFT_SHIFT  &trans        &kp LEFT      &kp DOWN      &kp RIGHT   &kp PAGE_UP        &kp F7   &kp F8  &kp F9    &kp F10   &kp F11  &kp F12
-  &kp RCTRL       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &kp PAGE_DOWN      &trans   &trans  &trans    &trans    &trans   &trans
+  &kp RCTRL       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &kp PAGE_DOWN      &trans   &trans  &trans    &trans    &trans   &raif_pass
                                 &kp LALT      &kp LGUI      &trans      &kp SPACE          &kp RET  &trans  &kp BSPC  &kp RGUI
             >;
         };
