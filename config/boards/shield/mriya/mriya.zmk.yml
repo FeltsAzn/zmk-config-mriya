@@ -1,0 +1,15 @@
+file_format: "1"
+id: mriya
+name: mriya
+type: shield
+url: https://github.com/FeltsAzn/zmk-config-mriya
+requires:
+- pro_micro
+exposes:
+- i2c_oleds
+features:
+- keys
+- studio
+siblings:
+- mriya_left
+- mriya_right
