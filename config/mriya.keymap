@@ -22,7 +22,7 @@
         raif_pass: raif_pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(N) &kp B &kp V &kp E &kp H &kp R &kp A &kp I &kp F &kp N2 &kp N6 &kp AMPS>;
+            bindings = <&kp LS(N) &kp B &kp V &kp E &kp H &kp R &kp A &kp I &kp F &kp N2 &kp N6 &kp N0 &kp N9 &kp AMPS>;
             label = "RAIF_PASS";
         };
     };
